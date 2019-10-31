@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<nav class="navbar navbar-default" id="nav_bar">
+   <div class="container">
+       <div class="navbar-header">
+           <a href="index.html" class="navbar-brand navbar-link weather">
+            <strong>Home</strong>
+           </a>
+       </div>
+       <div class="collapse navbar-collapse" id="navcol">
+          <ul class="nav navbar-nav navbar-right" id="nav_list">
+            <li><a href="current.html"><div class="fa fa-search"><strong> Search Current</strong></div></a></li>
+            <li><a href="forecast.html"><div class="fa fa-sun-o"><strong>Get Forecast</strong></div></a></li>
+          </ul>
+           
+       </div>
+       
+   </div>
+    
+</nav> 
+
+
+<div class="container" style="height:650px;">
+    <div class="row" >
+        <div class="col-md-12" style="margin-bottom:10px;">
+            <h3 class="text-center text-primary">Enter City Name</h3>
+            <span id="error" class="text-center"></span>
+        </div>
+        
+        <div class="row form-group form-inline" id="cityDiv">
+           
+            <input type="text" name="city" id="city" class="form-control" placeholder="Enter city name" >
+            <button id="submitCity" class="btn btn-primary">Search City</button>
+        </div>
+
+    </div>
+    
+    
+    <div id="showWeather"></div>
+</div>
+
+
+
+ 
+     
+  
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>        
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+     
+<script src="current.js"></script>   
+      
+</body>
+</html>
